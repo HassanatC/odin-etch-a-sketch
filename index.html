@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch A Sketch Project</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <script src="etchasketch.js" defer>
+    </script>
+    
+
+    <div class="container">
+
+        <div class="title">
+
+        <h1>Etch-A-Sketch</h1>
+        
+        </div>
+    
+        <div class="content">
+
+            <div class="board" id="board">
+
+
+                <div class="square">
+
+
+
+
+                </div>
+
+
+              
+
+
+
+            </div>
+
+            <div class="buttons">
+
+                <p>Select the size of your board:</p>
+
+                <input
+                 type="text"
+                placeholder="Select the size of your board, from a number between 16 to 64."
+                value="16"
+                onchange="changeBoard(this.value)">
+
+                <button class="reset" id="reset" onclick="resetBoard()">Reset Game</button>
+
+
+            </div>
+            
+        </div>
+
+
+
+
+    
+
+
+
+    </div>
+</body>
+
+
+
+</html>
