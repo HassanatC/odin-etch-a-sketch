@@ -6,7 +6,7 @@
     align-items: center;
     width: 100vh;
     height: 100vh;
-    background: rgb(178, 194, 176);
+    background: rgb(205, 219, 203);
     margin-left: auto;
     margin-right: auto;
     margin-top: -15vh;
@@ -18,7 +18,7 @@
     display: flex;
     color:rgb(15, 19, 18);
     font-size: 42px;
-    font-weight: 8000;
+    font-weight: 1000;
     font-family: Arial, Helvetica, sans-serif;
     justify-content: center;
     margin-right: auto;
@@ -33,7 +33,7 @@
 
 body {
 
-    background-color: rgb(178, 194, 176);
+    background-color: rgb(205, 219, 203);
 
 }
 
@@ -62,13 +62,14 @@ p {
     margin-top: 3vh;
     border-radius: 3px;
     justify-content: center;
+    text-align: center;
     align-items: center;
     border: 1px solid #000;
     padding: 20px 20px;
-    background: rgb(162, 204, 223);
-    width: 45vh;
+    background: rgb(231, 238, 236);
+    width: 41vh;
     font-size: 12px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 5px;
     padding: 5px 10px;
     
@@ -80,14 +81,21 @@ button {
     margin: 1vh;
     border-radius: 5px;
     color: black;
-    font-size: 18px;
-    background-color: rgb(197, 197, 171);
-    box-shadow: 1em black;
+    font-size: 16px;
+    background-color: rgb(175, 212, 170);
+    box-shadow: 2px 2px;
+    
 }
 
 button:hover {
 
     transform: scale(1.1);
+    transition: 0.1s ease-in-out;
+
+}
+
+button:active {
+    transform: scale(0.95);
     transition: 0.1s ease-in-out;
 
 }
