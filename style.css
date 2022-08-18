@@ -6,7 +6,6 @@
     align-items: center;
     width: 100vh;
     height: 100vh;
-    background: rgb(205, 219, 203);
     margin-left: auto;
     margin-right: auto;
     margin-top: -15vh;
@@ -33,17 +32,18 @@
 
 body {
 
-    background-color: rgb(205, 219, 203);
+    background-color: rgb(214, 233, 227);
 
 }
 
 
 
 .board {
-
+    margin-top: 10vh;
+    margin-bottom: 2vh;
     display: grid;
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     margin-right: auto;
     margin-left: auto;
 
@@ -53,9 +53,11 @@ body {
 p {
 
     padding-right: 20px;
+
 }
 
 .buttons {
+
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -66,10 +68,10 @@ p {
     align-items: center;
     border: 1px solid #000;
     padding: 20px 20px;
-    background: rgb(231, 238, 236);
-    width: 41vh;
+    background: rgb(196, 214, 209);
+    width: 51vh;
     font-size: 12px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Arial';
     padding: 5px;
     padding: 5px 10px;
     
@@ -77,19 +79,24 @@ p {
 
 }
 
+input {
+    max-width: 200px;
+}
+
 button {
     margin: 1vh;
-    border-radius: 5px;
-    color: black;
+    border-radius: 4px;
+    color: white;
+    font-weight: 600;
     font-size: 16px;
-    background-color: rgb(175, 212, 170);
-    box-shadow: 2px 2px;
+    background-color: rgb(111, 114, 111);
+    margin-left: 2vw;
     
 }
 
 button:hover {
 
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: 0.1s ease-in-out;
 
 }

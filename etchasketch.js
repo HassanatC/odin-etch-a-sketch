@@ -44,13 +44,14 @@ function createBoard(size) {
 // when called, upon using let amount = size * size, createBoard creates a board based on the input variables.
 
 createBoard(16, 16);
-changeBoard(16, 16)
+
+changeBoard(16, 16);
 
 // used to change the effect of the input textbox.
 
 function changeBoard(input) {
 
-    if (input > 2 || input < 64) {
+    if (input >= 2 || input <= 64) {
 
     createBoard(input) 
     } else {
