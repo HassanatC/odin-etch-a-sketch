@@ -3,6 +3,7 @@ function createBoard(size) {
 
 
     let board = document.querySelector('.board');
+
     let squares = board.querySelectorAll('div');
 
     squares.forEach(div => div.remove());
@@ -21,7 +22,11 @@ function createBoard(size) {
         for(let i = 0; i < amount; i++) {
 
         let square = document.createElement('div');
+
+        
+
         square.style.backgroundColor = 'white';
+
         board.insertAdjacentElement('beforeend', square);
         
         // Mouse over and event listener causes the white square to turn black after putting cursor over it.
@@ -36,16 +41,17 @@ function createBoard(size) {
 
         }
 
+ 
+
+      
         
     }
 
-    
 
 // when called, upon using let amount = size * size, createBoard creates a board based on the input variables.
 
 createBoard(16, 16);
 
-changeBoard(16, 16);
 
 // used to change the effect of the input textbox.
 
@@ -55,12 +61,13 @@ function changeBoard(input) {
 
     createBoard(input) 
     } else {
-        alert("Too many squares have been selected!");
+        console.log("Too many/too little squares have been selected!");
     
     }
  
 };
 
+changeBoard(16, 16);
 
 
 
@@ -69,6 +76,7 @@ const resetButton = document.getElementById('reset');
 resetButton.addEventListener('click', function resetBoard() {
 
     board.innerHTML = " ";
+
     createBoard(16, 16);
 
 });
