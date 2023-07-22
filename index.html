@@ -1,82 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-    
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch A Sketch</title>
     <link rel="stylesheet" href="style.css">
-
+    <script src="etchasketch.js" defer></script>
 </head>
-
-
 <body>
-
-    <script src="etchasketch.js" defer>
-    </script>
-    
-    <div class="title">
-
-        Etch A Sketch
-        
-    </div>
-
-
+    <h1 class="title">Etch A Sketch</h1>
     <div class="container">
-
-       
-    
         <div class="content">
-
             <div class="board" id="board">
-
-
-                <div class="square">
-
-
-
-
-
-
-                </div>
-
-
-              
-
-
-
             </div>
-
             <div class="buttons">
-
-                <p>Select your pixel size:</p>
-
-                <input
-                 type="text"
-                placeholder="Input"
-                value="16"
-                onchange="changeBoard(this.value)" class="field">
-
-                <button class="reset" id="reset" onclick="resetBoard()">Reset Board</button>
-
-    
-
+                <p>Enter board length:</p>
+                <input type="text" placeholder="length" value="16" onchange="changeBoard(this.value)" class="field">
+                <button class="reset" id="reset">Reset</button>
             </div>
-            
         </div>
-
-
-
-
-    
-
-
-
     </div>
 </body>
-
-
-
 </html>
